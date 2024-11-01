@@ -1,0 +1,11 @@
+---
+import { Sidebar } from '@/components/ui/sidebar';
+import Main from '../components/astro-component/Main.astro';
+import Base from '../layouts/Base.astro';
+---
+<Base title="OPPA - Buyer Home Page"> 
+    <Main>
+        <Sidebar client:load/>
+        <span> Buy Cars</span>
+    </Main>
+</Base>

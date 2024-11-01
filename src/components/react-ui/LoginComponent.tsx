@@ -13,7 +13,6 @@ import InputLabel from '@/components/react-ui/InputLabel';
 
 // IMPORTING ICON FROM HEROICONS
 import { UserIcon, LockClosedIcon } from '@heroicons/react/24/outline';
-
 const LoginComponent: React.FC = () => {
 
   const { showCustomToast } = useCustomToast();
@@ -110,7 +109,8 @@ const LoginComponent: React.FC = () => {
 
         <CardFooter className="flex flex-col mt-2">
 
-          <Button className="flex w-full my-2" type="submit">Confirm</Button>
+        <Button className="flex w-full my-2" type="submit">Confirm</Button>
+
         </CardFooter>
       </form>
       {/* SHOWS DIALOG COMPONENT AFTER A SUCCESSFUL LOGIN*/}
@@ -120,9 +120,15 @@ const LoginComponent: React.FC = () => {
           <DialogDescription>
             Welcome back, {username}!
           </DialogDescription>
+
+
+
+          {/* To add condition for roles*/}
           <Button onClick={closeDialog} className="mt-4 text-white p-2 rounded">
             Continue
           </Button>
+
+
         </DialogContent>
       </Dialog>
     </Card>
